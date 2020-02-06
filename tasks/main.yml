@@ -4,6 +4,9 @@
 
 - include: install.yml
 
+- include: install_repo.yml
+  when: (ansible_distribution == 'Linux Mint' or ansible_os_family == 'Ubuntu')
+  
 - name: copy tlp configuration
   template:
     src: "tlp.j2"
