@@ -1,0 +1,7 @@
+---
+- name: Install tlp repo
+  apt:
+    repo: "{{ item.repo }}"
+    codename: "{{ item.codename }}"
+    update_cache: no
+  with_items: "{{ tlp_repo }}"
