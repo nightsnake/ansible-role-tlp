@@ -1,6 +1,6 @@
 ---
 - name: Install tlp repo
-  apt:
+  apt_repository:
     repo: "{{ item.repo }}"
     codename: "{{ item.codename }}"
     update_cache: no

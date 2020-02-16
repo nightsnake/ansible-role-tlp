@@ -1,0 +1,13 @@
+---
+
+tlp_packages:
+  - tlp                   # PowerManagement fot thinkpad
+  - acpi-call-dkms        # Kernel module
+  - tp-smapi-dkms         # Kernel module
+tlp_services:
+  - tlp
+tlp_triggered_services: []
+tlp_repo:
+  - repo: ppa:linrunner/tlp
+    codename: bionic
+# vim: set ts=2 sw=2:
